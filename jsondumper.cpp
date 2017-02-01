@@ -162,7 +162,7 @@ json_t *JSONScriptDumper::FuncDescToJSON(ScriptFuncDescriptor_t &scriptFunc)
 		size_t iParamNameStart = 0;
 		for (size_t i = 0; i < scriptFunc.m_iParamCount; ++i)
 		{
-			static char szParamName[32];
+			static char szParamName[64];
 			if (scriptFunc.m_pszParameterNames)
 			{
 				iParamNameStart += (1 + Q_snprintf(szParamName, sizeof(szParamName), "%s", &scriptFunc.m_pszParameterNames[iParamNameStart]));
