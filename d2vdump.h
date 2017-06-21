@@ -85,6 +85,4 @@ inline VMType D2VDump::VMToVMType(IScriptVM *pVM)
 	return VM_Unknown;
 }
 
-extern D2VDump g_D2VDump;
-
 PLUGIN_GLOBALVARS();

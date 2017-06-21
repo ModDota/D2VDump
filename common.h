@@ -25,13 +25,14 @@
 
 #pragma once
 
+#include <cstdio>
 #include <inttypes.h>
 
 class IFileSystem;
 
 enum VMType : size_t
 {
-	VM_Unknown = SIZE_MAX,
+	VM_Unknown = size_t(~0),
 
 	VM_Main = 0,
 	VM_Bot,
